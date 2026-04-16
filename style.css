@@ -1,0 +1,398 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');*/
+/* ===== HOME PAGE ===== */
+ * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+   
+   
+}
+body {
+  /*font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe */
+  font-family: "Playwrite AU TAS", cursive;
+   color: #fff;
+}
+
+
+.home {
+  height: 100vh;
+}
+.container {
+    margin: auto ;
+    background-color:#172d13 ;
+     color: #fff;
+     height: 85%;
+}
+header {
+  display: flex;               
+  justify-content: space-between; 
+  align-items: center;          
+  padding: 10px;
+}
+h1{animation: anim3 1.25s ease-out;}
+h2{animation: anim5 1.25s ease-out;}
+h1, h2 {
+  color: #6bb77b;
+  margin: 0;  
+  font-size: 20px;
+   font-weight: normal;
+}
+.h1{font-size: 30px;}
+
+h3{
+  animation: animation1 1.25s ease-out;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 135px;
+
+}
+.pp {
+    text-align: center;
+  
+  font-size: 20px; 
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 71px;
+  color: #fff;
+}
+ .h{padding-top: 150px;}
+a {
+  font-size: 20px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid transparent; 
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  background-color: #d76f30;
+}
+
+nav a:hover {
+  background-color: transparent;
+  color: #d76f30;
+  border: 2px solid #fff;
+  transform: scale(1.1);
+}
+
+
+@keyframes animation1 {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+
+.m { animation: anim3 1.25s ease-out;}
+.a { animation: anim4 1.4s ease-out ;}
+.c { animation: anim5 1.25s ease-out;}
+
+@keyframes anim3 {
+  0% {
+    transform: translatex(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+  
+}
+@keyframes anim4 {
+  0% {
+    transform: translatey(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+  
+}
+@keyframes anim5 {
+  0% {
+    transform: translatex(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+  
+}
+
+.ma{animation: anim3 1.5s ease-out;}
+.co{animation: anim5 1.5s ease-out;}
+
+
+footer {
+    height: 15% ;
+    background-color:#6bb77b ;
+    margin-top: auto;
+    text-align: center;
+     padding: 20px;
+    width: 100%;
+   position: relative;
+    overflow: hidden
+  
+  
+}
+.f{
+   animation: animation2 1.25s ease-out;
+}
+@keyframes animation2 {
+  
+  0% {
+    transform: translateY(200px);
+     opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+     opacity: 1;
+  }
+}
+
+
+
+/* ===== COURSES PAGE =====------------------------------------------------------------------------------------------ */
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #172d13;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Header */
+th {
+    background-color: #d76f30;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+}
+
+/* Cells */
+td {
+    padding: 12px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #6bb77b;
+}
+
+/* Alternating rows */
+tr:nth-child(even) {
+    background-color: #1f3a1a;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #6bb77b;
+    color: #172d13;
+    transition: 0.3s;
+}
+
+.head2 {
+  display: flex;
+  padding: 10px;
+  justify-content: left;
+  font-size: 30px;
+}
+
+/* Add course-------------------------------------------------------------------------------------------*/
+
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  background-color: #d76f30;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reset { 
+  
+  margin: 5px;
+  background-color: #d76f30;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font: 10px;
+}
+input:focus, textarea:focus {
+  border: 2px solid #d76f30;
+  outline: none;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #d76f30;
+  border: 2px solid #d76f30;
+}
+
+form {
+   width: 38%;
+    float: left;
+  margin:  0  ;
+  padding-right: 20px;
+  margin-left: 190px;
+  display: flex;
+  flex-direction: column;
+  background-color: #172d13;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  
+}
+
+
+.vv {
+   padding-top: 100px;
+   width: 40%;
+  margin: 40px ;
+  display: flex;
+  flex-direction: column; 
+  gap: 60px;
+  
+  justify-content: left;
+
+}
+
+
+.contact {
+  font-size: 30px;
+}
+
+.social {
+  animation: anim3 1.25s ease-out;
+  margin: 20px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.social a:hover {
+  background-color: transparent;
+  color: #d76f30;
+  border: 2px solid #fff;
+  transform: scale(1.1);
+}
+
+
+@media (max-width:600px) {
+  body {background-color: #fff;}
+
+  
+}
+
+
+/* ====== MOBILE FIX ====== */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .home {
+    height: auto; /* بدل 100vh عشان ميكسرش الصفحة */
+  }
+
+  .container {
+    flex-direction: column; /* يخلي العناصر تحت بعض */
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  form {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 15px;
+  }
+
+  .vv {
+    width: 100%;
+    margin: 20px 0;
+    padding-top: 30px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+  }
+
+  nav a {
+    width: 80%;
+    max-width: 300px; /* عشان ميكسرش */
+    text-align: center;
+  }
+
+  h3 {
+    font-size: clamp(40px, 8vw, 45px); /* حجم ديناميكي */
+    padding-top: 20px;
+  }
+
+  .pp {
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 1.5;
+  }
+
+  .social {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 30px;
+  }
+
+  .social a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 10px;
+    height: auto;
+  }
+}
