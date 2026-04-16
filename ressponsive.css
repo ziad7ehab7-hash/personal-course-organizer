@@ -1,0 +1,244 @@
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* ── كل الشاشات لحد 1300px ─────────────────────────────── */
+@media (max-width: 1300px) {
+  body {
+    background-color: #172d13;
+  }
+
+  .container {
+    height: auto;
+    padding: 20px;
+     height: 85%;
+  }
+
+  .home {
+    height: auto
+    min-height: 100vh;
+  }
+
+  footer {
+    height: 15%;
+    /*height: auto;*/
+    padding: 15px;
+    margin-top: 85%;
+  }
+
+  form {
+    width: 45%;
+    margin-left: 60px;
+  }
+
+  .vv {
+    width: 35%;
+    padding-top: 60px;
+  }
+}
+
+
+/* ── 371px → 576px (Mobile) ─────────────────────────────── */
+@media (min-width: 371px) and (max-width: 576px) {
+  h3 {
+    font-size: clamp(55px, 12vw, 80px);
+    padding-top: 15px;
+  }
+
+  .pp {
+    font-size: 16px;
+  }
+
+  nav.h {
+    padding-top: 60px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    width: 85%;
+    text-align: center;
+  }
+
+  form {
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+  }
+
+  .vv {
+    width: 90%;
+    margin: 10px auto;
+    padding-top: 20px;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 20px;
+  }
+
+  table {
+    width: 95%;
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+  h1 , h2 {display: flex;
+justify-content: space-between;}
+
+}
+
+/* ── 577px → 768px (Tablet صغير) ───────────────────────── */
+@media (min-width: 577px) and (max-width: 768px) {
+  h3 {
+    font-size: clamp(70px, 12vw, 100px);
+    padding-top: 20px;
+  }
+
+  .pp {
+    font-size: 17px;
+  }
+
+  nav.h {
+    padding-top: 70px;
+    gap: 15px;
+  }
+
+  nav a {
+    width: 70%;
+    text-align: center;
+  }
+
+  form {
+    width: 80%;
+    margin: 20px auto;
+    float: none;
+  }
+
+  .vv {
+    width: 80%;
+    margin: 10px auto;
+    padding-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .social {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 25px;
+  }
+
+  table {
+    width: 90%;
+  }
+
+  th, td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+}
+
+/* ── 769px → 991px (Tablet كبير) ───────────────────────── */
+@media (min-width: 769px) and (max-width: 991px) {
+  h3 {
+    font-size: clamp(90px, 13vw, 115px);
+  }
+
+  nav.h {
+    padding-top: 90px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav a {
+    width: auto;
+  }
+
+  form {
+    width: 55%;
+    margin-left: 40px;
+    float: left;
+  }
+
+  .vv {
+    width: 30%;
+    padding-top: 50px;
+    margin: 20px 10px;
+    gap: 30px;
+  }
+
+  .social {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 40px;
+  }
+
+  table {
+    width: 85%;
+  }
+}
+
+/* ── 992px → 1180px (Laptop) ───────────────────────────── */
+@media (min-width: 992px) and (max-width: 1180px) {
+  h3 {
+    font-size: clamp(110px, 13vw, 130px);
+  }
+
+  nav.h {
+    padding-top: 100px;
+  }
+
+  form {
+    width: 40%;
+    margin-left: 100px;
+  }
+
+  .vv {
+    width: 35%;
+    padding-top: 70px;
+    gap: 45px;
+  }
+
+  table {
+    width: 82%;
+  }
+}
+
+/* ── 1181px → 1300px (Desktop) ─────────────────────────── */
+@media (min-width: 1181px) and (max-width: 1300px) {
+  h3 {
+    font-size: 133px;
+  }
+
+  nav.h {
+    padding-top: 130px;
+  }
+
+  form {
+    width: 38%;
+    margin-left: 160px;
+  }
+
+  .vv {
+    width: 38%;
+    padding-top: 90px;
+    gap: 55px;
+  }
+
+  table {
+    width: 80%;
+  }
+}
